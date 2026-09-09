@@ -24,7 +24,8 @@ body{
     overflow-x:hidden;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
+
 nav{
     position:fixed;
     top:0;
@@ -56,6 +57,11 @@ nav a{
     color:white;
     text-decoration:none;
     margin-left:20px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#f4c430;
 }
 
 .btn{
@@ -66,9 +72,16 @@ nav a{
     font-weight:bold;
     text-decoration:none;
     display:inline-block;
+    transition:.3s;
 }
 
-/* HERO */
+.btn:hover{
+    transform:translateY(-2px);
+    background:#ffd84d;
+}
+
+/* ================= HERO ================= */
+
 .hero{
     min-height:100vh;
     display:flex;
@@ -80,7 +93,8 @@ nav a{
         rgba(0,0,0,.72),
         rgba(0,0,0,.90)
     ),
-    url("1788930394013.png") center/cover no-repeat;
+    url("https://raw.githubusercontent.com/Fitleafindia/Akhadabadamragra-/main/1788930394013.png")
+    center/cover no-repeat;
 }
 
 .hero-content{
@@ -111,7 +125,8 @@ h1 span{
     line-height:1.6;
 }
 
-/* SECTIONS */
+/* ================= SECTIONS ================= */
+
 section{
     padding:90px 7%;
 }
@@ -129,6 +144,7 @@ section{
     object-fit:cover;
     border-radius:25px;
     display:block;
+    background:#171717;
 }
 
 .about p{
@@ -142,7 +158,8 @@ h2{
     margin:10px 0 30px;
 }
 
-/* CARDS */
+/* ================= CARDS ================= */
+
 .cards{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -155,6 +172,12 @@ h2{
     padding:30px;
     border-radius:20px;
     border:1px solid #302a18;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#f4c430;
 }
 
 .card h3{
@@ -167,7 +190,8 @@ h2{
     line-height:1.6;
 }
 
-/* GALLERY */
+/* ================= GALLERY ================= */
+
 .gallery{
     display:grid;
     grid-template-columns:repeat(2,1fr);
@@ -182,9 +206,17 @@ h2{
     border-radius:20px;
     display:block;
     background:#171717;
+    border:1px solid #292929;
+    transition:.3s;
 }
 
-/* CONTACT */
+.gallery img:hover{
+    transform:scale(1.02);
+    border-color:#f4c430;
+}
+
+/* ================= CONTACT ================= */
+
 .contact{
     background:
     linear-gradient(
@@ -202,7 +234,8 @@ h2{
     line-height:1.5;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
+
 footer{
     text-align:center;
     padding:30px;
@@ -210,7 +243,12 @@ footer{
     border-top:1px solid #222;
 }
 
-/* MOBILE */
+footer b{
+    color:#f4c430;
+}
+
+/* ================= MOBILE ================= */
+
 @media(max-width:800px){
 
     nav{
@@ -269,14 +307,27 @@ footer{
         font-size:14px;
         padding:11px 15px;
     }
+
+    .hero{
+        padding-left:6%;
+        padding-right:6%;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    section{
+        padding:70px 6%;
+    }
 }
 </style>
 </head>
 
-
 <body>
 
-<!-- NAVBAR -->
+<!-- ================= NAVBAR ================= -->
+
 <nav>
 
     <div class="logo">
@@ -296,7 +347,8 @@ footer{
 </nav>
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
+
 <section class="hero">
 
     <div class="hero-content">
@@ -324,13 +376,14 @@ footer{
 </section>
 
 
-<!-- ABOUT -->
+<!-- ================= ABOUT ================= -->
+
 <section id="about">
 
     <div class="about">
 
         <img
-            src="1788930409089.png"
+            src="https://raw.githubusercontent.com/Fitleafindia/Akhadabadamragra-/main/1788930409089.png"
             alt="Akhada Badam Ragra"
         >
 
@@ -364,7 +417,8 @@ footer{
     </div>
 
 
-    <!-- CARDS -->
+    <!-- ================= CARDS ================= -->
+
     <div class="cards">
 
         <div class="card">
@@ -413,7 +467,8 @@ footer{
 </section>
 
 
-<!-- GALLERY -->
+<!-- ================= GALLERY ================= -->
+
 <section id="gallery">
 
     <div class="title">
@@ -427,22 +482,22 @@ footer{
     <div class="gallery">
 
         <img
-            src="1788930394013.png"
+            src="https://raw.githubusercontent.com/Fitleafindia/Akhadabadamragra-/main/1788930394013.png"
             alt="Akhada Badam Ragra Shop"
         >
 
         <img
-            src="1788930424023.png"
+            src="https://raw.githubusercontent.com/Fitleafindia/Akhadabadamragra-/main/1788930424023.png"
             alt="Fresh preparation"
         >
 
         <img
-            src="1788930447198.png"
+            src="https://raw.githubusercontent.com/Fitleafindia/Akhadabadamragra-/main/1788930447198.png"
             alt="Akhada Badam Ragra"
         >
 
         <img
-            src="1788930484229.png"
+            src="https://raw.githubusercontent.com/Fitleafindia/Akhadabadamragra-/main/1788930484229.png"
             alt="Interior"
         >
 
@@ -451,11 +506,9 @@ footer{
 </section>
 
 
-<!-- CONTACT -->
-<section
-    class="contact"
-    id="contact"
->
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
 
     <div class="title">
         VISIT US
@@ -486,7 +539,8 @@ footer{
 </section>
 
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
+
 <footer>
 
     <b>Akhada Badam Ragra</b>
@@ -497,4 +551,4 @@ footer{
 </footer>
 
 </body>
-        </html>
+                </html>
